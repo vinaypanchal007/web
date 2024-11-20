@@ -10,7 +10,7 @@ function Education() {
     <div className="edu">
       <div className="edbox">
         <div className="first">
-          <h3>GRADUATION</h3>
+          <h3>CERTIFICATION</h3>
           <p>Full Stack Developer Certificate</p>
           <p>Imarticus Learning Institute</p>
           <img 
