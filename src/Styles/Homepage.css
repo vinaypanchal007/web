@@ -1,0 +1,153 @@
+/* Main home container */
+#home {
+    padding-top: 0rem;
+  }
+  
+  /* Box layout */
+  #box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+  }
+  
+  /* Intro section */
+  #intro {
+    font-family: "Roboto Slab", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(20, 20, 70);
+    width: 100%;
+    text-align: center;
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  /* Name styling */
+  #name {
+    font-family: "Yellowtail", cursive;
+    font-size: 3rem;
+  }
+  
+  /* Picture container */
+  #pic {
+    height: 20rem;
+    width: 50%;
+  }
+  
+  /* Image styling */
+  #pic-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  /* Skill section */
+  #skill {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Skill images container */
+  #one {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping for small screens */
+    gap: 1rem;
+    animation: slideInLeft 1s ease-in-out; /* Slide in from the left */
+  }
+  
+  #one img {
+    width: 120px; /* Adjusted image width */
+    height: auto;
+    transition: transform 0.3s; /* Smooth hover effect */
+  }
+  
+  #one img:hover {
+    transform: scale(1.2);
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive design for screens below 768px */
+  @media only screen and (max-width: 768px) {
+    #box {
+      flex-direction: column;
+      padding: 2rem;
+    }
+  
+    #pic {
+      display: none;
+    }
+  
+    #name {
+      font-size: 2.5rem;
+    }
+    
+    /* Skill section */
+    #one {
+      justify-content: center;
+      padding-bottom: 3rem;
+    }
+  
+    #one img {
+      width: 100px; /* Adjust image size for smaller screens */
+    }
+  }
+  
+  /* Responsive design for screens below 480px */
+  @media only screen and (max-width: 480px) {
+    #box {
+      padding: 1.5rem;
+      gap: 1rem;
+    }
+  
+    #pic {
+      height: 12rem;
+      width: 80%;
+    }
+  
+    #name {
+      font-size: 2rem;
+    }
+  
+    #intro {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  
+    /* Skill section */
+    #one {
+      justify-content: center;
+      padding-bottom: 3rem;
+    }
+  
+    #one img {
+      width: 80px; /* Further reduce size for small devices */
+    }
+  }

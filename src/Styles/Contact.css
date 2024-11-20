@@ -1,0 +1,121 @@
+/* Main contact section */
+.contact {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h3 {
+    font-family: "Roboto Slab", sans-serif;
+}
+
+/* Button styling */
+.contact a {
+    text-decoration: none; /* Remove underline from anchor tags */
+}
+
+.contact .github-btn,
+.contact .linkedin-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effects */
+.contact .github-btn:hover {
+    background-color: rgb(180, 180, 180);
+    color: #fff;
+}
+
+.contact .linkedin-btn:hover {
+    background-color: #00a6ff;
+    color: #fff;
+}
+
+/* GitHub icon and text styling */
+.contact .git {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.contact .pgit,
+.contact .plink {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none; /* Ensure no underline on the button text */
+}
+
+/* LinkedIn icon and text styling */
+.contact .linkedin-icon {
+    font-size: 1.5rem;
+    color: #0077b5;
+}
+
+/* Responsive design for screens below 768px */
+@media only screen and (max-width: 768px) {
+    .contact .github-btn,
+    .contact .linkedin-btn {
+        width: 8rem;
+        height: 2.5rem;
+    }
+
+    .contact .pgit,
+    .contact .plink {
+        font-size: 1rem;
+    }
+
+    .contact .git,
+    .contact .linkedin-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive design for screens below 480px */
+@media only screen and (max-width: 480px) {
+    .contact .github-btn,
+    .contact .linkedin-btn {
+        width: 7rem;
+        height: 2.2rem;
+    }
+
+    .contact .pgit,
+    .contact .plink {
+        font-size: 0.9rem;
+    }
+
+    .contact .git,
+    .contact .linkedin-icon {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive design for screens below 360px */
+@media only screen and (max-width: 360px) {
+    .contact .github-btn,
+    .contact .linkedin-btn {
+        width: 6rem;
+        height: 2rem;
+    }
+
+    .contact .pgit,
+    .contact .plink {
+        font-size: 0.8rem;
+    }
+
+    .contact .git,
+    .contact .linkedin-icon {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,102 @@
+.edu {
+  padding-top: 5rem;
+  color: aqua;
+  font-family: 'Roboto', sans-serif;
+}
+
+.edu .edbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.edu .edbox .first,
+.edu .edbox .one,
+.edu .edbox .two,
+.edu .edbox .three {
+  color: rgb(20, 20, 70);
+  border: 1px solid rgb(20, 20, 70);
+  margin: 10px;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: calc(50% - 1rem);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.edu .edbox .first:hover,
+.edu .edbox .one:hover,
+.edu .edbox .two:hover,
+.edu .edbox .three:hover {
+  transform: translateY(-10px);
+}
+
+.edu .edbox .certificate-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(20, 20, 70);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.edu .edbox .certificate-image:hover {
+  transform: scale(1.05);
+}
+
+.edu .edbox .grad-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgb(20, 20, 70);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.edu .edbox .grad-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .edu .edbox .first,
+  .edu .edbox .one,
+  .edu .edbox .two,
+  .edu .edbox .three {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu .edbox {
+      gap: 1rem;
+  }
+
+  .edu .edbox .first,
+  .edu .edbox .one,
+  .edu .edbox .two,
+  .edu .edbox .three {
+      padding: 1rem;
+  }
+
+  .edu .ed-heading {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .edu .edbox .first,
+  .edu .edbox .one,
+  .edu .edbox .two,
+  .edu .edbox .three {
+      padding: 0.8rem;
+  }
+
+  .edu .ed-heading {
+      font-size: 1.6rem;
+  }
+}

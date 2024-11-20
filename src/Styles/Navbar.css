@@ -1,0 +1,132 @@
+.navbar {
+    background-color: rgb(20, 20, 70);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .navbar-logo:hover {
+    cursor: pointer;
+    color: aqua;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* Nav Menu */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transition: all 0.5s ease;
+  }
+  
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(20, 20, 70);
+    padding: 0;
+    margin: 0;
+    animation: slideDown 0.5s ease forwards; /* Added slide down animation */
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-links {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+  
+  .nav-links:hover {
+    background-color: aqua;
+    color: rgb(20, 20, 70);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: -300px; /* Hidden by default above the view */
+      left: 0;
+      width: 100%;
+      transition: all 0.5s ease;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+      top: 60px; /* Animates from hidden to shown */
+    }
+  
+    .nav-item {
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+  
+  @media screen and (max-width: 240px) {
+    .navbar-logo {
+      font-size: 1.5rem;
+    }
+  
+    .nav-links {
+      font-size: 1rem;
+    }
+  
+    .menu-icon {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Keyframes for slide-down animation */
+  @keyframes slideDown {
+    0% {
+      top: -300px; /* Start hidden above the viewport */
+    }
+    100% {
+      top: 60px; /* End at the visible position */
+    }
+  }
+  
